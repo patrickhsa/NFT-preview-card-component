@@ -1,0 +1,146 @@
+:root {
+    /*Cores primárias*/
+    --azul-claro: #8BACDA;
+    --ciano: #00fff7;
+
+    /*Cores neutras*/
+    --azul-muito-escuro-main: #0d192b;
+    --azul-muito-escuro-card: #14253d;
+    --azul-muito-escuro-line: #2f415b;
+    --branco: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--azul-muito-escuro-main);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    background-color: var(--azul-muito-escuro-card);
+    max-width: 340px;
+    height: 63%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+
+.imagem-nft {
+    width: 90%;
+    border-radius: 15px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.imagem-olho {
+    display: none;
+}
+
+h1 {
+    color: var(--branco);
+    font-weight: 600;
+    font-size: 20px;
+    margin: 20px 0;        
+    width: 90%;
+    cursor: pointer;
+}
+
+h1:active {
+    color: var(--ciano);
+}
+
+h2 {
+    color: var(--azul-claro);
+    font-weight: 300;
+    font-size: 18px;
+    width: 90%;
+}
+
+.preco-prazo {
+    display: inline-flex;
+    margin: 20px 0;
+    width: 90%;    
+}
+
+.preco {
+    color: var(--ciano);
+    padding: 0 110px 0 10px;
+}
+
+.relogio {
+    width: 5%;
+    height: 90%;
+}
+
+.prazo {
+    color: var(--azul-claro);    
+    padding-left: 8px;
+}
+
+hr {
+    width: 90%;
+    opacity: 30%;
+    margin: 7px 0 15px 0;
+}
+
+.creation {
+    display: inline-flex;
+    align-items: center;
+    width: 90%;
+    margin-bottom: 20px;
+}
+
+.imagem-creation {
+    width: 10%;
+    border: 1.5px solid #FFFFFF;
+    border-radius: 50%;    
+}
+
+.creation-01 {
+    color: var(--azul-claro);
+    font-weight: 300;
+    margin: 0 10px;
+}
+
+.creation-02 {
+    color: var(--branco);
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.creation-02:active {
+    color: var(--ciano);
+}
+
+footer {
+    position: fixed;
+    bottom: 1em;
+    left: 41%;
+    color: var(--branco);
+    text-decoration: none;
+    outline: none;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 820px) {
+    main {
+        width: 95%;
+        height: 80%;
+    }
+
+    footer {
+        left: 15%;        
+        font-size: 12px;
+    }
+}
